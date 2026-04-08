@@ -1,0 +1,124 @@
+[span_2](start_span)/* Design Style: Blue (Trust), White (Clean), Gold (Premium)[span_2](end_span) */
+
+:root {
+    --primary-blue: #003366;
+    --gold: #D4AF37;
+    --white: #ffffff;
+    --light-bg: #f8f9fa;
+    --text-dark: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: var(--text-dark);
+    background-color: var(--white);
+}
+
+[span_3](start_span)/* Navigation[span_3](end_span) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: var(--white);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+.logo span { color: var(--gold); }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+[span_4](start_span)/* Hero Section[span_4](end_span) */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(to right, #fff5f2, #ffffff);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--primary-blue);
+    margin: 20px 0;
+}
+
+.btn-gold {
+    background-color: var(--gold);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+[span_5](start_span)[span_6](start_span)/* Search Bar[span_5](end_span)[span_6](end_span) */
+.search-bar {
+    display: flex;
+    background: white;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.search-item {
+    flex: 1;
+    padding: 0 20px;
+    border-right: 1px solid #eee;
+}
+
+.search-item input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+[span_7](start_span)/* Destination Cards[span_7](end_span) */
+.destinations { padding: 80px 8%; text-align: center; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover { transform: translateY(-10px); }
+
+.card img { width: 100%; height: 200px; object-fit: cover; }
+
+.btn-outline {
+    border: 2px solid var(--primary-blue);
+    background: transparent;
+    color: var(--primary-blue);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
